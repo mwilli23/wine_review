@@ -1,7 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Wine.create(title:'Pinot Noir ', producer:'J. Christopher', vintage:1997, price:23.68)
+Wine.create(title:'Sangiovese', producer:'Randal Hobbs', vintage:2001, price: 26.81)
+Wine.create(title:"Lux Pinot Noir", producer:'Orson Scott Card', vintage:1987, price:44.83)
+Wine.create(title:'Barbera', producer:'Pete Zuckasici', vintage:2003, price:25.34)
