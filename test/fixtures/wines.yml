@@ -1,25 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  string: MyString
-  year: MyString
-  integer: MyString
-  winery: MyString
-  string: MyString
-  country: MyString
-  string: MyString
-  varietal: MyString
-  string: MyString
+Coppolla:
+  name: Francis Coppolla
+  winery: Diamond Collection
+  year: 2009
+  country: France
+  varietal: Claret
 
-two:
-  name: MyString
-  string: MyString
-  year: MyString
-  integer: MyString
-  winery: MyString
-  string: MyString
-  country: MyString
-  string: MyString
-  varietal: MyString
-  string: MyString
+Flop:
+  name: Flip Flop
+  winery: Moscato d’Italia
+  year: 2010
+  country: Italy
+  varietal: Moscato
