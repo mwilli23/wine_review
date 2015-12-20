@@ -26,6 +26,11 @@ def update
   redirect_to @wine
 end
 
+def destroy
+  @wine = Wine.find(params[:id])
+  @wine.destroy
+  redirect_to wines_url
+end
 
  private
 
