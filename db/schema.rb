@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216034144) do
+ActiveRecord::Schema.define(version: 20151219013128) do
 
   create_table "wines", force: :cascade do |t|
-    t.string   "title"
-    t.string   "producer"
-    t.integer  "vintage"
-    t.decimal  "price"
+    t.string   "name"
+    t.string   "string"
+    t.string   "year"
+    t.string   "integer"
+    t.string   "winery"
+    t.string   "country"
+    t.string   "varietal"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
