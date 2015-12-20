@@ -1,0 +1,11 @@
+<%= form_for(@wine) do |f| %>
+  <%= f.label :name %> <%= f.text_field :name, autofocus: true %><br />
+  <%= f.label :Producer %> <%= f.text_field :winery %><br />
+  <%= f.label :Year %> <%= f.text_field :year %><br />
+  <%= f.label :Country %> <%= f.text_field :country %><br />
+  <%= f.label :Varietal %> <%= f.text_field :varietal %><br />
+  <p>
+    <%= f.submit %>
+    <%= link_to 'Cancel', wines_path %>
+  </p>
+<% end %>

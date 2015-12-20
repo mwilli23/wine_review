@@ -1,10 +1,13 @@
 class WinesController < ApplicationController
+ #before_action :set_wine, only: [ :show, :edit, :update, :destroy ]
+
+
  def index
   @available_at = Time.now
   @wines = Wine.all
  end
  def show
-  @wine = Wine.find(params[:id])
+ @wine = Wine.find(params[:id])
  end
  def new
   @wine = Wine.new
@@ -21,7 +24,7 @@ def edit
 end
 
 def update
-  @wine = Wine.find(params[:id])
+ @wine = Wine.find(params[:id])
   @wine.update(wine_params)
   redirect_to @wine
 end
