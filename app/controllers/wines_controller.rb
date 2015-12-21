@@ -1,5 +1,5 @@
 class WinesController < ApplicationController
- #before_action :set_wine, only: [ :show, :edit, :update, :destroy ]
+ before_action :set_wine, only: [ :show, :edit, :update, :destroy ]
 
 
  def index
@@ -7,7 +7,7 @@ class WinesController < ApplicationController
   @wines = Wine.all
  end
  def show
- @wine = Wine.find(params[:id])
+# @wine = Wine.find(params[:id])
  end
  def new
   @wine = Wine.new
@@ -20,23 +20,25 @@ class WinesController < ApplicationController
  end
 
 def edit
-  @wine = Wine.find(params[:id])
+ # @wine = Wine.find(params[:id])
 end
 
 def update
- @wine = Wine.find(params[:id])
-  @wine.update(wine_params)
+# @wine = Wine.find(params[:id])
+ @wine.update(wine_params)
   redirect_to @wine
 end
 
 def destroy
-  @wine = Wine.find(params[:id])
+ # @wine = Wine.find(params[:id])
   @wine.destroy
   redirect_to wines_url
 end
 
  private
-
+ def set_wine
+  @wine = Wine.find(params[:id])
+ end
  def wine_params
   params.require(:wine).permit(:name, :winery, :year, :country, :varietal)
  end
